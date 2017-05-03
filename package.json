@@ -1,0 +1,19 @@
+{
+  "name": "gulp-starterkit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Ellinger",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.0",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {}
+}

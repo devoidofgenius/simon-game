@@ -1,0 +1,9 @@
+### OSX ###
+*.DS_Store
+
+### Dependencies ###
+node_modules/
+
+### Production ###
+app/css/*.css
+app/js/*.js

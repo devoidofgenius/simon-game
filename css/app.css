@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=VT323');
-
+@import url("https://fonts.googleapis.com/css?family=VT323");
 body, html {
   height: 100vh;
   overflow: hidden;
@@ -7,8 +6,7 @@ body, html {
   padding: 0;
   background: #f5f5f5;
   font-family: 'VT323', monospace;
-  color: #454545;
-}
+  color: #454545; }
 
 .container {
   height: 100%;
@@ -16,32 +14,26 @@ body, html {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 20px 0 20px;
-}
+  padding: 0 20px 0 20px; }
 
 .controller {
   width: 80%;
-  height: auto;
+  height: auto; }
   @media only screen and (min-width: 768px) {
-    width: 75vh;
-  }
-}
+    .controller {
+      width: 75vh; } }
 
 .btn {
-  opacity: 0.25;
-  &.blink {
+  opacity: 0.25; }
+  .btn.blink {
     opacity: 1;
-    transition: opacity 300ms ease-in-out;
-  }
-}
+    transition: opacity 300ms ease-in-out; }
 
 .on {
-  fill: #BEBEBE;
-}
+  fill: #BEBEBE; }
 
 .removeClick {
-  pointer-events: none;
-}
+  pointer-events: none; }
 
 .reset {
   display: flex;
@@ -50,14 +42,11 @@ body, html {
   outline: none;
   fill: #BEBEBE;
   transition: fill 250ms ease-in-out;
-  cursor: pointer;
-  &:hover {
-    fill: #808080;
-  }
-  svg {
-    width: 50px;
-  }
-}
+  cursor: pointer; }
+  .reset:hover {
+    fill: #808080; }
+  .reset svg {
+    width: 50px; }
 
 .scoreboard {
   display: flex;
@@ -65,41 +54,32 @@ body, html {
   align-items: center;
   font-size: 35px;
   margin-bottom: 20px;
-  overflow: hidden;
-  .score {
+  overflow: hidden; }
+  .scoreboard .score {
     flex-grow: 1;
     display: flex;
-    align-items: center;
-    .coin {
+    align-items: center; }
+    .scoreboard .score .coin {
       height: 45px;
-      width: auto;
-    }
-  }
-  .flash-msg {
+      width: auto; }
+  .scoreboard .flash-msg {
     align-self: center;
     text-align: right;
-    flex-grow:2;
+    flex-grow: 2;
     margin: 0;
     visibility: hidden;
-    text-transform: uppercase;
-  }
-}
+    text-transform: uppercase; }
 
 .animate {
-  animation: flash 1000ms cubic-bezier(0.5, 0, 0.25, 2.0) 1 alternate;
-}
+  animation: flash 1000ms cubic-bezier(0.5, 0, 0.25, 2) 1 alternate; }
 
 @keyframes flash {
   0% {
     visibility: hidden;
-    transform: translateY(50px);
-  }
+    transform: translateY(50px); }
   15%, 85% {
     visibility: visible;
-    transform: translateY(0px);
-  }
+    transform: translateY(0px); }
   100% {
     visibility: hidden;
-    transform: translateY(50px);
-  }
-}
+    transform: translateY(50px); } }
